@@ -43,6 +43,7 @@ func run() error {
 		})
 	})
 
+	router.AddAuthGroup(app)
 	router.AddBookGroup(app)
 
 	var port string

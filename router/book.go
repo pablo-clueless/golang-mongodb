@@ -44,7 +44,7 @@ func Create(c *fiber.Ctx) error {
 	book, err := collection.InsertOne(c.Context(), b)
 	if err != nil {
 		return c.Status(500).JSON(fiber.Map{
-			"error":   "failed to created book",
+			"error":   "failed to create book",
 			"message": err.Error(),
 		})
 	}
